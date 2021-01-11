@@ -1,4 +1,2 @@
 #
-class hashi_stack::repo () {
-  
-}
+class hashi_stack::repo {}
