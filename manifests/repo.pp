@@ -1,4 +1,4 @@
-# hashi_stack::repo
+# This class installs the hashicorp repository
 #
 # @summary Set up the package repository for the HashiCorp Stack components
 #
@@ -38,7 +38,7 @@ class hashi_stack::repo (
         pin          => $priority,
       }
     }
-    'RedHat', 'Linux': {
+    'RedHat': {
       yumrepo { 'HashiCorp':
         descr    => $description,
         baseurl  => 'https://rpm.releases.hashicorp.com/RHEL/$releasever/$basearch/stable',

@@ -5,7 +5,7 @@
 [![Puppet Forge - endorsement](https://img.shields.io/puppetforge/e/puppet/hashi_stack.svg)](https://forge.puppetlabs.com/puppet/hashi_stack)
 [![Puppet Forge - scores](https://img.shields.io/puppetforge/f/puppet/hashi_stack.svg)](https://forge.puppetlabs.com/puppet/hashi_stack)
 [![puppetmodule.info docs](http://www.puppetmodule.info/images/badge.png)](http://www.puppetmodule.info/m/puppet-hashi_stack)
-[![Apache-2.0 License](https://img.shields.io/github/license/voxpupuli/puppet-hashi_stack.svg)](LICENSE)
+[![AGPL-3.0 License](https://img.shields.io/github/license/voxpupuli/puppet-hashi_stack.svg)](LICENSE)
 
 ### What This Module Affects
 
