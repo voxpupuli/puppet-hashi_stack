@@ -3,7 +3,7 @@
   "version": "1.0.0-rc0",
   "author": "Vox Pupuli",
   "summary": "This module contains shared code for various HashiCorp modules",
-  "license": "Apache-2.0",
+  "license": "AGPL-3.0",
   "source": "https://github.com/voxpupuli/puppet-hashi_stack",
   "project_page": "https://github.com/voxpupuli/puppet-hashi_stack",
   "issues_url": "https://github.com/voxpupuli/puppet-hashi_stack/issues",
