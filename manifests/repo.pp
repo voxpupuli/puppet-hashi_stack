@@ -5,17 +5,21 @@
 # @example
 #   include hashi_stack::repo
 #
+# @example
+#   class { 'hashi_stack::repo': } -> package { 'packer': ensure => installed }
+#
 # @param priority A numeric priority for the repo, passed to the package management system
 # @param proxy The URL of a HTTP proxy to use for package downloads (YUM only)
-# @param base_repo_url The base url for the repo path
+# @param key_id GPG key to authenticate Apt package signatures.
+# @param key_source The location of an existing GPG key file to copy.
+# @param description Repository description
 class hashi_stack::repo (
-  Optional[Integer] $priority      = undef,
-  String            $proxy         = 'absent',
+  Optional[Integer] $priority = undef,
+  String $proxy = 'absent',
+  String $key_id = 'E8A032E094D8EB4EA189D270DA418C88A3219F7B',
+  Stdlib::HTTPSUrl $key_source = 'https://apt.releases.hashicorp.com/gpg',
+  String $description = 'HashiCorp package repository.',
 ) {
-  $key_id='E8A032E094D8EB4EA189D270DA418C88A3219F7B'
-  $key_source='https://apt.releases.hashicorp.com/gpg'
-  $description='HashiCorp package repository.'
-
   case $facts['os']['family'] {
     'Debian': {
       include apt
@@ -25,7 +29,7 @@ class hashi_stack::repo (
         architecture => 'amd64',
         comment      => $description,
         location     => 'https://apt.releases.hashicorp.com',
-        release      => 'stable',
+        release      => $facts['os']['distro']['codename'],
         repos        => 'main',
         key          => {
           'id'     => $key_id,

@@ -6,12 +6,12 @@ describe 'hashi_stack::repo class' do
     # Using puppet_apply as a helper
     it 'should work with no errors based on the example' do
       pp = <<-EOS
-        class { 'hashi_stack::repo': }
+        class { 'hashi_stack::repo': } -> package { 'packer': ensure => installed }
       EOS
 
       # Run it twice and test for idempotency
-      expect(apply_manifest(pp).exit_code).to_not eq(1)
-      expect(apply_manifest(pp).exit_code).to eq(0)
+      apply_manifest(pp, catch_failures: true)
+      apply_manifest(pp, catch_changes: true)
     end
   end
 end
