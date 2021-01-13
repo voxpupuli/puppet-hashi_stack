@@ -1,8 +1,8 @@
 fixtures:
-  forge_modules:
-    stdlib: puppetlabs/stdlib
-    apt: puppetlabs/apt
-    yum: puppet/yum
+  repositories:
+    apt: "https://github.com/puppetlabs/puppetlabs-apt.git"
+    stdlib: "https://github.com/puppetlabs/puppetlabs-stdlib.git"
+    yum: "https://github.com/voxpupuli/puppet-yum.git"
     yumrepo_core:
-      repo: puppetlabs/yumrepo_core
+      repo: "https://github.com/puppetlabs/puppetlabs-yumrepo_core.git"
       puppet_version: ">= 6.0.0"

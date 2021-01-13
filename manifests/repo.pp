@@ -2,11 +2,15 @@
 #
 # @summary Set up the package repository for the HashiCorp Stack components
 #
-# @example
+# @example Inclusion using defaults
 #   include hashi_stack::repo
 #
-# @example
-#   class { 'hashi_stack::repo': } -> package { 'packer': ensure => installed }
+# @example Include repo and install packer as package
+#   include hashi_stack::repo
+#   package { 'packer':
+#     ensure  => installed,
+#     require => Class['Hashi_stack::Repo'],
+#   }
 #
 # @param priority A numeric priority for the repo, passed to the package management system
 # @param proxy The URL of a HTTP proxy to use for package downloads (YUM only)

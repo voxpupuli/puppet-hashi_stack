@@ -6,7 +6,11 @@ describe 'hashi_stack::repo class' do
     # Using puppet_apply as a helper
     it 'should work with no errors based on the example' do
       pp = <<-EOS
-        class { 'hashi_stack::repo': } -> package { 'packer': ensure => installed }
+        include hashi_stack::repo
+        package { 'packer':
+          ensure  => installed,
+          require => Class['Hashi_stack::Repo'],
+        }
       EOS
 
       # Run it twice and test for idempotency
