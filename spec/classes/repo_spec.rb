@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe 'hashi_stack::repo', type: 'class' do
+describe 'hashi_stack::repo' do
   on_supported_os.each do |os, os_facts|
     context "on #{os}" do
       let(:facts) { os_facts }

@@ -29,7 +29,6 @@ class hashi_stack::repo (
         architecture => 'amd64',
         comment      => $description,
         location     => 'https://apt.releases.hashicorp.com',
-        release      => $facts['os']['distro']['codename'],
         repos        => 'main',
         key          => {
           'id'     => $key_id,
