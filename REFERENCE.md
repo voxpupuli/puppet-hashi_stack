@@ -16,16 +16,20 @@ This class installs the hashicorp repository
 
 #### Examples
 
-##### 
+##### Inclusion using defaults
 
 ```puppet
 include hashi_stack::repo
 ```
 
-##### 
+##### Include repo and install packer as package
 
 ```puppet
-class { 'hashi_stack::repo': } -> package { 'packer': ensure => installed }
+include hashi_stack::repo
+package { 'packer':
+  ensure  => installed,
+  require => Class['Hashi_stack::Repo'],
+}
 ```
 
 #### Parameters
