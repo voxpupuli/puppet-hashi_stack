@@ -17,12 +17,14 @@
 # @param key_id GPG key to authenticate Apt package signatures.
 # @param key_source The location of an existing GPG key file to copy.
 # @param description Repository description
+# @param rpm_base Base URL for the Yum repository
 class hashi_stack::repo (
   Optional[Integer] $priority = undef,
   String $proxy = 'absent',
   String $key_id = 'E8A032E094D8EB4EA189D270DA418C88A3219F7B',
   Stdlib::HTTPSUrl $key_source = 'https://apt.releases.hashicorp.com/gpg',
   String $description = 'HashiCorp package repository.',
+  String $rpm_base = 'https://rpm.releases.hashicorp.com',
 ) {
   case $facts['os']['family'] {
     'Debian': {
@@ -48,7 +50,7 @@ class hashi_stack::repo (
     'RedHat': {
       yumrepo { 'HashiCorp':
         descr    => $description,
-        baseurl  => 'https://rpm.releases.hashicorp.com/RHEL/$releasever/$basearch/stable',
+        baseurl  => "${rpm_base}/RHEL/\$releasever/\$basearch/stable",
         gpgcheck => 1,
         gpgkey   => $key_source,
         enabled  => 1,
