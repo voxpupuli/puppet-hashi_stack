@@ -4,14 +4,26 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
-## [v1.0.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v1.0.0) (2021-01-16)
+## [v2.0.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v2.0.0) (2021-05-10)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-hashi_stack/compare/v1.0.0...v2.0.0)
+
+**Breaking changes:**
+
+- Drop EoL Debian, adjust deps for Puppet 6 & 7 [\#6](https://github.com/voxpupuli/puppet-hashi_stack/pull/6) ([genebean](https://github.com/genebean))
+
+**Implemented enhancements:**
+
+- Allow customising the base URL of the Yum repository [\#5](https://github.com/voxpupuli/puppet-hashi_stack/pull/5) ([nbarrientos](https://github.com/nbarrientos))
+- Enable Puppet 7 support/testing [\#4](https://github.com/voxpupuli/puppet-hashi_stack/pull/4) ([bastelfreak](https://github.com/bastelfreak))
+
+## [v1.0.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v1.0.0) (2021-01-17)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-hashi_stack/compare/d9ceffd75b1f222e1145d58cceaf3a9bcb41b360...v1.0.0)
 
-**Merged pull requests:**
+**Implemented enhancements:**
 
 - moving parameters into appropriate place, adding meaning unit test, f… [\#2](https://github.com/voxpupuli/puppet-hashi_stack/pull/2) ([attachmentgenie](https://github.com/attachmentgenie))
-- modulesync 4.0.0-10-g1c946c3 [\#1](https://github.com/voxpupuli/puppet-hashi_stack/pull/1) ([attachmentgenie](https://github.com/attachmentgenie))
 
 
 

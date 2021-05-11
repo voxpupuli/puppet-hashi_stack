@@ -10,7 +10,7 @@
 
 ## Classes
 
-### `hashi_stack::repo`
+### <a name="hashi_stackrepo"></a>`hashi_stack::repo`
 
 This class installs the hashicorp repository
 
@@ -34,9 +34,16 @@ package { 'packer':
 
 #### Parameters
 
-The following parameters are available in the `hashi_stack::repo` class.
+The following parameters are available in the `hashi_stack::repo` class:
 
-##### `priority`
+* [`priority`](#priority)
+* [`proxy`](#proxy)
+* [`key_id`](#key_id)
+* [`key_source`](#key_source)
+* [`description`](#description)
+* [`rpm_base`](#rpm_base)
+
+##### <a name="priority"></a>`priority`
 
 Data type: `Optional[Integer]`
 
@@ -44,7 +51,7 @@ A numeric priority for the repo, passed to the package management system
 
 Default value: ``undef``
 
-##### `proxy`
+##### <a name="proxy"></a>`proxy`
 
 Data type: `String`
 
@@ -52,7 +59,7 @@ The URL of a HTTP proxy to use for package downloads (YUM only)
 
 Default value: `'absent'`
 
-##### `key_id`
+##### <a name="key_id"></a>`key_id`
 
 Data type: `String`
 
@@ -60,7 +67,7 @@ GPG key to authenticate Apt package signatures.
 
 Default value: `'E8A032E094D8EB4EA189D270DA418C88A3219F7B'`
 
-##### `key_source`
+##### <a name="key_source"></a>`key_source`
 
 Data type: `Stdlib::HTTPSUrl`
 
@@ -68,11 +75,19 @@ The location of an existing GPG key file to copy.
 
 Default value: `'https://apt.releases.hashicorp.com/gpg'`
 
-##### `description`
+##### <a name="description"></a>`description`
 
 Data type: `String`
 
 Repository description
 
 Default value: `'HashiCorp package repository.'`
+
+##### <a name="rpm_base"></a>`rpm_base`
+
+Data type: `String`
+
+Base URL for the Yum repository
+
+Default value: `'https://rpm.releases.hashicorp.com'`
 
