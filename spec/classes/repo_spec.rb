@@ -11,10 +11,10 @@ describe 'hashi_stack::repo' do
       when 'RedHat'
         it {
           is_expected.to contain_yumrepo('HashiCorp').with(
-            baseurl: 'https://rpm.releases.hashicorp.com/RHEL/$releasever/$basearch/stable',
+            baseurl: 'https://rpm.releases.hashicorp.com/RHEL/$releasever/$basearch/stable'
           )
         }
-        context "with custom Yum base url" do
+        context 'with custom Yum base url' do
           let(:params) do
             {
               rpm_base: 'https://somewhere.else'
@@ -23,7 +23,7 @@ describe 'hashi_stack::repo' do
 
           it {
             is_expected.to contain_yumrepo('HashiCorp').with(
-              baseurl: 'https://somewhere.else/RHEL/$releasever/$basearch/stable',
+              baseurl: 'https://somewhere.else/RHEL/$releasever/$basearch/stable'
             )
           }
         end

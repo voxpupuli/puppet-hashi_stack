@@ -1,10 +1,9 @@
 require 'spec_helper_acceptance'
 
 describe 'hashi_stack::repo class' do
-
   context 'default parameters' do
     # Using puppet_apply as a helper
-    it 'should work with no errors based on the example' do
+    it 'works with no errors based on the example' do
       pp = <<-EOS
         include hashi_stack::repo
         package { 'packer':
