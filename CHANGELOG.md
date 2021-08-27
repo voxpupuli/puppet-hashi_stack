@@ -4,7 +4,15 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
-## [v2.0.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v2.0.0) (2021-05-10)
+## [v2.0.1](https://github.com/voxpupuli/puppet-hashi_stack/tree/v2.0.1) (2021-08-27)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-hashi_stack/compare/v2.0.0...v2.0.1)
+
+**Merged pull requests:**
+
+- Allow stdlib 8.0.0 [\#8](https://github.com/voxpupuli/puppet-hashi_stack/pull/8) ([smortex](https://github.com/smortex))
+
+## [v2.0.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v2.0.0) (2021-05-11)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-hashi_stack/compare/v1.0.0...v2.0.0)
 
