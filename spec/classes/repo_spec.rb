@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 describe 'hashi_stack::repo' do
@@ -5,15 +7,18 @@ describe 'hashi_stack::repo' do
     context "on #{os}" do
       let(:facts) { os_facts }
 
+      it { is_expected.to compile.with_all_deps }
+
       case os_facts[:os]['family']
       when 'Debian'
         it { is_expected.to contain_apt__source('HashiCorp') }
       when 'RedHat'
         it {
-          is_expected.to contain_yumrepo('HashiCorp').with(
+          expect(subject).to contain_yumrepo('HashiCorp').with(
             baseurl: 'https://rpm.releases.hashicorp.com/RHEL/$releasever/$basearch/stable'
           )
         }
+
         context 'with custom Yum base url' do
           let(:params) do
             {
@@ -22,7 +27,7 @@ describe 'hashi_stack::repo' do
           end
 
           it {
-            is_expected.to contain_yumrepo('HashiCorp').with(
+            expect(subject).to contain_yumrepo('HashiCorp').with(
               baseurl: 'https://somewhere.else/RHEL/$releasever/$basearch/stable'
             )
           }
