@@ -25,6 +25,7 @@ class hashi_stack::repo (
   Stdlib::HTTPSUrl $key_source = 'https://apt.releases.hashicorp.com/gpg',
   String $description = 'HashiCorp package repository.',
   String $rpm_base = 'https://rpm.releases.hashicorp.com',
+  Integer[0,1] $repo_gpgcheck = 0,
 ) {
   case $facts['os']['family'] {
     'Debian': {
@@ -49,13 +50,14 @@ class hashi_stack::repo (
     }
     'RedHat': {
       yumrepo { 'HashiCorp':
-        descr    => $description,
-        baseurl  => "${rpm_base}/RHEL/\$releasever/\$basearch/stable",
-        gpgcheck => 1,
-        gpgkey   => $key_source,
-        enabled  => 1,
-        proxy    => $proxy,
-        priority => $priority,
+        descr         => $description,
+        baseurl       => "${rpm_base}/RHEL/\$releasever/\$basearch/stable",
+        gpgcheck      => 1,
+        gpgkey        => $key_source,
+        repo_gpgcheck => $repo_gpgcheck,
+        enabled       => 1,
+        proxy         => $proxy,
+        priority      => $priority,
       }
     }
     default: {
