@@ -42,6 +42,7 @@ The following parameters are available in the `hashi_stack::repo` class:
 * [`key_source`](#key_source)
 * [`description`](#description)
 * [`rpm_base`](#rpm_base)
+* [`repo_gpgcheck`](#repo_gpgcheck)
 
 ##### <a name="priority"></a>`priority`
 
@@ -90,4 +91,12 @@ Data type: `String`
 Base URL for the Yum repository
 
 Default value: `'https://rpm.releases.hashicorp.com'`
+
+##### <a name="repo_gpgcheck"></a>`repo_gpgcheck`
+
+Data type: `Integer[0,1]`
+
+
+
+Default value: `0`
 
