@@ -26,6 +26,7 @@ class hashi_stack::repo (
   String $description = 'HashiCorp package repository.',
   String $rpm_base = 'https://rpm.releases.hashicorp.com',
   Integer[0,1] $repo_gpgcheck = 0,
+  Integer[0,1] $repo_enabled = 1,
 ) {
   case $facts['os']['family'] {
     'Debian': {
@@ -55,7 +56,7 @@ class hashi_stack::repo (
         gpgcheck      => 1,
         gpgkey        => $key_source,
         repo_gpgcheck => $repo_gpgcheck,
-        enabled       => 1,
+        enabled       => $repo_enabled,
         proxy         => $proxy,
         priority      => $priority,
       }
