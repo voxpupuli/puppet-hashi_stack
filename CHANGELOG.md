@@ -4,6 +4,18 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v2.2.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v2.2.0) (2023-01-27)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-hashi_stack/compare/v2.1.0...v2.2.0)
+
+**Implemented enhancements:**
+
+- add toggle for enabling yum repo [\#21](https://github.com/voxpupuli/puppet-hashi_stack/pull/21) ([wimkorevaar](https://github.com/wimkorevaar))
+
+**Merged pull requests:**
+
+- use new gpg key [\#22](https://github.com/voxpupuli/puppet-hashi_stack/pull/22) ([BDelacour](https://github.com/BDelacour))
+
 ## [v2.1.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v2.1.0) (2022-08-28)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-hashi_stack/compare/v2.0.1...v2.1.0)
