@@ -18,6 +18,9 @@
 # @param key_source The location of an existing GPG key file to copy.
 # @param description Repository description
 # @param rpm_base Base URL for the Yum repository
+# @param repo_gpgcheck enables gpg validation of packages from the repo
+# @param repo_enabled enables/disables the repository
+#
 class hashi_stack::repo (
   Optional[Integer] $priority = undef,
   String $proxy = 'absent',

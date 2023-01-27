@@ -6,11 +6,11 @@
 
 ### Classes
 
-* [`hashi_stack::repo`](#hashi_stackrepo): Set up the package repository for the HashiCorp Stack components
+* [`hashi_stack::repo`](#hashi_stack--repo): Set up the package repository for the HashiCorp Stack components
 
 ## Classes
 
-### <a name="hashi_stackrepo"></a>`hashi_stack::repo`
+### <a name="hashi_stack--repo"></a>`hashi_stack::repo`
 
 This class installs the hashicorp repository
 
@@ -36,23 +36,24 @@ package { 'packer':
 
 The following parameters are available in the `hashi_stack::repo` class:
 
-* [`priority`](#priority)
-* [`proxy`](#proxy)
-* [`key_id`](#key_id)
-* [`key_source`](#key_source)
-* [`description`](#description)
-* [`rpm_base`](#rpm_base)
-* [`repo_gpgcheck`](#repo_gpgcheck)
+* [`priority`](#-hashi_stack--repo--priority)
+* [`proxy`](#-hashi_stack--repo--proxy)
+* [`key_id`](#-hashi_stack--repo--key_id)
+* [`key_source`](#-hashi_stack--repo--key_source)
+* [`description`](#-hashi_stack--repo--description)
+* [`rpm_base`](#-hashi_stack--repo--rpm_base)
+* [`repo_gpgcheck`](#-hashi_stack--repo--repo_gpgcheck)
+* [`repo_enabled`](#-hashi_stack--repo--repo_enabled)
 
-##### <a name="priority"></a>`priority`
+##### <a name="-hashi_stack--repo--priority"></a>`priority`
 
 Data type: `Optional[Integer]`
 
 A numeric priority for the repo, passed to the package management system
 
-Default value: ``undef``
+Default value: `undef`
 
-##### <a name="proxy"></a>`proxy`
+##### <a name="-hashi_stack--repo--proxy"></a>`proxy`
 
 Data type: `String`
 
@@ -60,15 +61,15 @@ The URL of a HTTP proxy to use for package downloads (YUM only)
 
 Default value: `'absent'`
 
-##### <a name="key_id"></a>`key_id`
+##### <a name="-hashi_stack--repo--key_id"></a>`key_id`
 
 Data type: `String`
 
 GPG key to authenticate Apt package signatures.
 
-Default value: `'E8A032E094D8EB4EA189D270DA418C88A3219F7B'`
+Default value: `'798AEC654E5C15428C8E42EEAA16FCBCA621E701'`
 
-##### <a name="key_source"></a>`key_source`
+##### <a name="-hashi_stack--repo--key_source"></a>`key_source`
 
 Data type: `Stdlib::HTTPSUrl`
 
@@ -76,7 +77,7 @@ The location of an existing GPG key file to copy.
 
 Default value: `'https://apt.releases.hashicorp.com/gpg'`
 
-##### <a name="description"></a>`description`
+##### <a name="-hashi_stack--repo--description"></a>`description`
 
 Data type: `String`
 
@@ -84,7 +85,7 @@ Repository description
 
 Default value: `'HashiCorp package repository.'`
 
-##### <a name="rpm_base"></a>`rpm_base`
+##### <a name="-hashi_stack--repo--rpm_base"></a>`rpm_base`
 
 Data type: `String`
 
@@ -92,11 +93,19 @@ Base URL for the Yum repository
 
 Default value: `'https://rpm.releases.hashicorp.com'`
 
-##### <a name="repo_gpgcheck"></a>`repo_gpgcheck`
+##### <a name="-hashi_stack--repo--repo_gpgcheck"></a>`repo_gpgcheck`
 
 Data type: `Integer[0,1]`
 
-
+enables gpg validation of packages from the repo
 
 Default value: `0`
+
+##### <a name="-hashi_stack--repo--repo_enabled"></a>`repo_enabled`
+
+Data type: `Integer[0,1]`
+
+enables/disables the repository
+
+Default value: `1`
 
