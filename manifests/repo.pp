@@ -21,7 +21,7 @@
 class hashi_stack::repo (
   Optional[Integer] $priority = undef,
   String $proxy = 'absent',
-  String $key_id = 'E8A032E094D8EB4EA189D270DA418C88A3219F7B',
+  String $key_id = '798AEC654E5C15428C8E42EEAA16FCBCA621E701',
   Stdlib::HTTPSUrl $key_source = 'https://apt.releases.hashicorp.com/gpg',
   String $description = 'HashiCorp package repository.',
   String $rpm_base = 'https://rpm.releases.hashicorp.com',
