@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v3.0.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v3.0.0) (2023-08-19)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-hashi_stack/compare/v2.2.0...v3.0.0)
+
+**Breaking changes:**
+
+- Drop Puppet 6 support [\#28](https://github.com/voxpupuli/puppet-hashi_stack/pull/28) ([bastelfreak](https://github.com/bastelfreak))
+
+**Implemented enhancements:**
+
+- Add Ubuntu 22.04 support [\#32](https://github.com/voxpupuli/puppet-hashi_stack/pull/32) ([bastelfreak](https://github.com/bastelfreak))
+- Add Debian 11 support [\#31](https://github.com/voxpupuli/puppet-hashi_stack/pull/31) ([bastelfreak](https://github.com/bastelfreak))
+- Add EL9 support [\#30](https://github.com/voxpupuli/puppet-hashi_stack/pull/30) ([bastelfreak](https://github.com/bastelfreak))
+- Add AlmaLinux/Rocky/OracleLinux support [\#29](https://github.com/voxpupuli/puppet-hashi_stack/pull/29) ([bastelfreak](https://github.com/bastelfreak))
+- Add Puppet 8 support [\#27](https://github.com/voxpupuli/puppet-hashi_stack/pull/27) ([bastelfreak](https://github.com/bastelfreak))
+- puppetlabs/stdlib: Allow 9.x [\#26](https://github.com/voxpupuli/puppet-hashi_stack/pull/26) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v2.2.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v2.2.0) (2023-01-27)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-hashi_stack/compare/v2.1.0...v2.2.0)
