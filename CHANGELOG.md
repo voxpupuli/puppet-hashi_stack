@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v3.1.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v3.1.0) (2023-11-19)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-hashi_stack/compare/v3.0.0...v3.1.0)
+
+**Implemented enhancements:**
+
+- Add Debian 12 support [\#34](https://github.com/voxpupuli/puppet-hashi_stack/pull/34) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v3.0.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v3.0.0) (2023-08-19)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-hashi_stack/compare/v2.2.0...v3.0.0)
