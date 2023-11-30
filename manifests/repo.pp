@@ -31,13 +31,18 @@ class hashi_stack::repo (
   Integer[0,1] $repo_gpgcheck = 0,
   Integer[0,1] $repo_enabled = 1,
 ) {
+  $arch = $facts['os']['architecture'] ? {
+    'aarch64' => 'arm64',  # 'aarch64' is official, but Hashicorp uses 'arm64'
+    default   => $facts['os']['architecture'],
+  }
+
   case $facts['os']['family'] {
     'Debian': {
       include apt
 
       apt::source { 'HashiCorp':
         ensure       => 'present',
-        architecture => 'amd64',
+        architecture => $arch,
         comment      => $description,
         location     => 'https://apt.releases.hashicorp.com',
         repos        => 'main',
