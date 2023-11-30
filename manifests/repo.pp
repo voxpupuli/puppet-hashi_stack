@@ -33,7 +33,7 @@ class hashi_stack::repo (
 ) {
   $arch = $facts['os']['architecture'] ? {
     'aarch64' => 'arm64',  # 'aarch64' is official, but Hashicorp uses 'arm64'
-    default   => $facts['os']['architecture']
+    default   => $facts['os']['architecture'],
   }
 
   case $facts['os']['family'] {
