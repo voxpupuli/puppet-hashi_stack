@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v3.2.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v3.2.0) (2024-03-24)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-hashi_stack/compare/v3.1.0...v3.2.0)
+
+**Implemented enhancements:**
+
+- Add support for AArch64/ARM64 binaries [\#36](https://github.com/voxpupuli/puppet-hashi_stack/pull/36) ([rgrizzell](https://github.com/rgrizzell))
+
 ## [v3.1.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v3.1.0) (2023-11-19)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-hashi_stack/compare/v3.0.0...v3.1.0)
