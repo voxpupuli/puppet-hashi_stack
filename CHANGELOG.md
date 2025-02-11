@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v3.3.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v3.3.0) (2025-02-11)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-hashi_stack/compare/v3.2.0...v3.3.0)
+
+**Merged pull requests:**
+
+- Add Ubuntu 24.04 support [\#47](https://github.com/voxpupuli/puppet-hashi_stack/pull/47) ([bastelfreak](https://github.com/bastelfreak))
+- puppetlabs/apt: Allow 10.x [\#45](https://github.com/voxpupuli/puppet-hashi_stack/pull/45) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v3.2.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v3.2.0) (2024-03-24)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-hashi_stack/compare/v3.1.0...v3.2.0)
