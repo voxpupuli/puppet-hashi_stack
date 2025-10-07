@@ -47,7 +47,7 @@ class hashi_stack::repo (
         location     => 'https://apt.releases.hashicorp.com',
         repos        => 'main',
         key          => {
-          'id'     => $key_id,
+          'name'   => 'hashicorp-archive-keyring.asc',
           'source' => $key_source,
         },
         include      => {
