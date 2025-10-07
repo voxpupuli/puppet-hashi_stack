@@ -4,6 +4,21 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v4.0.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v4.0.0) (2025-10-07)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-hashi_stack/compare/v3.3.0...v4.0.0)
+
+**Breaking changes:**
+
+- Drop puppet, update openvox minimum version to 8.19 [\#53](https://github.com/voxpupuli/puppet-hashi_stack/pull/53) ([TheMeier](https://github.com/TheMeier))
+
+**Implemented enhancements:**
+
+- apt::source: Switch from apt-key to new keyrings [\#60](https://github.com/voxpupuli/puppet-hashi_stack/pull/60) ([bastelfreak](https://github.com/bastelfreak))
+- Add Debian 13 support [\#59](https://github.com/voxpupuli/puppet-hashi_stack/pull/59) ([bastelfreak](https://github.com/bastelfreak))
+- puppetlabs/apt: Allow 12.x [\#57](https://github.com/voxpupuli/puppet-hashi_stack/pull/57) ([bastelfreak](https://github.com/bastelfreak))
+- metadata.json: Add OpenVox [\#49](https://github.com/voxpupuli/puppet-hashi_stack/pull/49) ([jstraw](https://github.com/jstraw))
+
 ## [v3.3.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v3.3.0) (2025-02-11)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-hashi_stack/compare/v3.2.0...v3.3.0)
