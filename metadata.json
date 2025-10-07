@@ -1,6 +1,6 @@
 {
   "name": "puppet-hashi_stack",
-  "version": "4.0.0",
+  "version": "4.0.1-rc0",
   "author": "Vox Pupuli",
   "summary": "This module contains shared code for various HashiCorp modules",
   "license": "AGPL-3.0",
