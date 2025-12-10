@@ -17,7 +17,7 @@ See [REFERENCE](REFERENCE.md).
 
 ## Limitations
 
-Depends on the JSON gem, or a modern ruby. (Ruby 2.5 and newer are supported)
+The list of tested OpenVox major versions and OS versions is listed in the metadata.json.
 
 ## Development
 
