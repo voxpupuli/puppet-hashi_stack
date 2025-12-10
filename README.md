@@ -21,10 +21,7 @@ Depends on the JSON gem, or a modern ruby. (Ruby 2.5 and newer are supported)
 
 ## Development
 
-Vox Pupuli welcomes new contributions to this
-module, especially those that include documentation and rspec tests. We are
-happy to provide guidance if necessary.
+Vox Pupuli welcomes new contributions to this module, especially those that include documentation and rspec tests.
+We are happy to provide guidance if necessary.
 
-Open an [issue](https://github.com/voxpupuli/puppet-hashi_stack/issues) or
-[fork](https://github.com/voxpupuli/puppet-hashi_stack/fork) and open a
-[Pull Request](https://github.com/voxpupuli/puppet-hashi_stack/pulls)
+Open an [issue](https://github.com/voxpupuli/puppet-hashi_stack/issues) or [fork](https://github.com/voxpupuli/puppet-hashi_stack/fork) and open a [Pull Request](https://github.com/voxpupuli/puppet-hashi_stack/pulls)
