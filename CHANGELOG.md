@@ -4,6 +4,14 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not affect the functionality of the module.
 
+## [v4.1.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v4.1.0) (2025-12-10)
+
+[Full Changelog](https://github.com/voxpupuli/puppet-hashi_stack/compare/v4.0.0...v4.1.0)
+
+**Implemented enhancements:**
+
+- apt: Set HashiCorp repo priority to 500 [\#63](https://github.com/voxpupuli/puppet-hashi_stack/pull/63) ([bastelfreak](https://github.com/bastelfreak))
+
 ## [v4.0.0](https://github.com/voxpupuli/puppet-hashi_stack/tree/v4.0.0) (2025-10-07)
 
 [Full Changelog](https://github.com/voxpupuli/puppet-hashi_stack/compare/v3.3.0...v4.0.0)
