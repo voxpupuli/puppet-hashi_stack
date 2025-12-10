@@ -12,7 +12,7 @@
 * Installs the hashicorp repositories
 
 With the 4.1.0 release, the apt HashiCorp repo will be configured with a priority of 500.
-As a result, the packages will have a higher priority over the debian.org default repos.
+As a result, the packages will have a higher priority than the debian.org default repos.
 
 In the past, the HashiCorp repos were preferred by accident, because they usually contain newer releases than debian.org.
 
