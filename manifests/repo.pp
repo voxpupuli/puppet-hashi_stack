@@ -40,7 +40,11 @@ class hashi_stack::repo (
     'Debian': {
       include apt
 
-      apt::source { 'HashiCorp':
+      apt::pin { 'HashiCorp':
+        originator => 'apt.releases.hashicorp.com',
+        priority   => 500,
+      }
+      -> apt::source { 'HashiCorp':
         ensure       => 'present',
         architecture => $arch,
         comment      => $description,
