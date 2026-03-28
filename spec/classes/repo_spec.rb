@@ -15,20 +15,20 @@ describe 'hashi_stack::repo' do
       when 'RedHat'
         it {
           expect(subject).to contain_yumrepo('HashiCorp').with(
-            baseurl: 'https://rpm.releases.hashicorp.com/RHEL/$releasever/$basearch/stable'
+            baseurl: 'https://rpm.releases.hashicorp.com/RHEL/$releasever/$basearch/stable',
           )
         }
 
         context 'with custom Yum base url' do
           let(:params) do
             {
-              rpm_base: 'https://somewhere.else'
+              rpm_base: 'https://somewhere.else',
             }
           end
 
           it {
             expect(subject).to contain_yumrepo('HashiCorp').with(
-              baseurl: 'https://somewhere.else/RHEL/$releasever/$basearch/stable'
+              baseurl: 'https://somewhere.else/RHEL/$releasever/$basearch/stable',
             )
           }
         end
