@@ -108,4 +108,3 @@ Data type: `Integer[0,1]`
 enables/disables the repository
 
 Default value: `1`
-
